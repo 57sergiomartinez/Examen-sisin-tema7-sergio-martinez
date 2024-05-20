@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   sudo apt update
 
   # Generar desde el entorno real archivo e inserts
-  echo "--Insertar datos en la lista 'menu'" > /home/vagrant/datos_menu.sql
+  echo "-- Insertar datos en la lista 'menu'" > /home/vagrant/datos_menu.sql
   echo "INSERT INTO gestion_menu.menu (nombre, creador, tiempo, precio) VALUES" >> /home/vagrant/datos_menu.sql
   echo "('Fabada', 'ElXokas', 20, 10)," >> /home/vagrant/datos_menu.sql
   echo "('Secreto', 'Naide', 30, 50)," >> /home/vagrant/datos_menu.sql
@@ -22,5 +22,3 @@ Vagrant.configure("2") do |config|
   SHELL
  
 end
-
-
