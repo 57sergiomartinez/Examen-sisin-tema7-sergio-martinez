@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Generar desde el entorno real archivo e inserts
   echo "--Insertar datos de una lista de 'menus'" > /home/vagrant/datos_menus.sql
-  echo "INSERT INTO gestion_menus.menus (nombre, creador, tiempo, precio) VALUES" >> /home/vagrant/datos_menus.sql
+  echo "INSERT INTO gestion_menus.menu (nombre, creador, tiempo, precio) VALUES" >> /home/vagrant/datos_menus.sql
   echo "('Fabada', 'ElXokas', 20, 10)," >> /home/vagrant/datos_menus.sql
   echo "('Secreto', 'Naide', 30, 50)," >> /home/vagrant/datos_menus.sql
   echo "('Macheroni', 'JeyKey', 10, 15)," >> /home/vagrant/datos_menus.sql
